@@ -1,0 +1,165 @@
+body {
+    background-color: #f1f1f1;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+/*--------------------登录与注册 start-----------------------*/
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #d1d6da;
+    margin: 10% auto 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.tab-title {
+    height: 40px;
+    position: relative;
+    left: 50%;
+    float: left;
+    top: 40px;
+}
+
+.tab-title a {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000;
+    margin: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+    position: relative;
+    right: 50%;
+    z-index: 2;
+    float: left
+}
+
+.active {
+    border-bottom: 2px solid #0f87eb;
+}
+
+.tab-title .point {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    right: 50%;
+    z-index: 2;
+    float: left
+}
+
+.login-tab-btn {
+
+}
+.regist-tab-btn {
+
+}
+
+.login-regist-form {
+    height: 100px;
+    margin: 120px auto;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.user-name-input, .pass-word-input {
+    display: block;
+    width: 265px;
+    height: 50px;
+    border: 1px solid #888;
+    box-shadow: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+.user-name-input {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-color: #fff;
+    margin-bottom: -1px;
+}
+
+.pass-word-input {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bottom-container {
+    height: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.remember-me-input {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.remember-me-text {
+    line-height: 30px;
+    float: left;
+}
+
+.login-width-problem {
+    color: #888;
+    float: right;
+    cursor: pointer;
+    line-height: 30px;
+}
+.login-btn {
+    width: 300px;
+    height: 40px;
+    background-color: #0f87eb;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: none;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    margin-top:20px;
+}
+.login-btn:hover {
+    background-color: #0f69be;
+}
+
+.regist-btn {
+    width: 300px;
+    height: 40px;
+    background-color: #1dba5f;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: none;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    margin-top:20px;
+}
+.regist-btn:hover {
+    background-color: #1d984c;
+}
+
+/*--------------------登录与注册 end -----------------------*/
+
+/*--------------------首页start-----------------------*/
+
+
+/*--------------------首页end-----------------------*/
