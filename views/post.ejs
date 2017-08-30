@@ -1,13 +1,71 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-<h1>发表文章</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid col-lg-9">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="glyphicon glyphicon-list-alt logo-icon navbar-toggle" aria-hidden="true"></span>
+            <a class="navbar-brand logo-text" href="#">博客</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">所有 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">我的</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索博客">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right col-sm-5 col-md-5 col-lg-4">
+                <li class="col-xs-4 col-sm-4 col-md-4" style="float: right">
+                    <button type="button" class="btn btn-danger logout-btn col-xs-12">退出</button>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<main class="container">
+    <div class="row">
+        <div class="input-container">
+            <input type="text" class="form-control article-title" placeholder="标题">
+            <textarea class="form-control article-content" rows="20" placeholder="内容"></textarea>
+            <button type="button" class="btn btn-info post-btn">发送</button>
+        </div>
+    </div>
+</main>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/dist/js/jquery-3.0.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+var crypto = require('crypto'),
+    User = require('../models/user.js');
 module.exports = function (app) {
   app.get('/', function (req, res) {
     res.render('index',{title:'Express'})
@@ -8,7 +10,19 @@ module.exports = function (app) {
   });
 
   app.get('/regist', function (req, res) {
+
     res.render('regist',{title:'Express'})
+  });
+
+  app.post('/regist', function (req, res) {
+
+    var name = req.body.name,
+        password = req.body.password,
+        password_re = req.body['password-repeat'];
+    if(password != password_re) {
+      //req.flash('error','两次输入的密码不一致');
+      return res.redirect('/regist');
+    }
   });
 
   app.get('/post', function (req, res) {
